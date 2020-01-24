@@ -1,7 +1,7 @@
 const express = require('express')
 const path = require('path')
 const app = express()
-const port = process.env.port || 3000 
+const port = app.env.PORT || 3000 
 //SERVE STATIC FILES
 app.use(express.static(__dirname + '/dist/Noshitha'));
 //SERVE index.html from home(root) route
